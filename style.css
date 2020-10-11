@@ -3,22 +3,10 @@
 html {
   font-size: 10px;
   height: 100%;
-}
-
-/* To add a filter to the image without affecting content */
-html:after {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
   background-image: url("images/elizeu-dias-29QO6oX3GlA-unsplash.jpg");
   background-size: cover;
   background-position: center center;
-  width: 100%;
-  height: 100%;
   filter: grayscale(1);
-  z-index: -1;
 }
 
 body {
@@ -49,6 +37,7 @@ body {
   color: #fff;
   background: rgba(0, 0, 0, 0.4);
   text-shadow: 0 0 0.5rem black;
+  transition: all 0.2s ease-in;
 }
 
 kbd {
@@ -61,6 +50,10 @@ kbd {
   text-transform: uppercase;
   letter-spacing: 0.1rem;
   color: #ffc600;
+}
+
+.coloredFont {
+  filter: grayscale(0);
 }
 
 .playing {
