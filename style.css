@@ -1,14 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+
 html {
   font-size: 10px;
-  background: url("images/elizeu-dias-29QO6oX3GlA-unsplash.jpg") center;
+  height: 100%;
+}
+
+/* To add a filter to the image without affecting content */
+html:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url("images/elizeu-dias-29QO6oX3GlA-unsplash.jpg");
   background-size: cover;
+  background-position: center center;
+  width: 100%;
   height: 100%;
   filter: grayscale(1);
+  z-index: -1;
 }
 
 body {
   height: 100%;
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: "Raleway", sans-serif;
+}
+
+.keys {
+  min-height: 100vh;
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+}
+
+.key {
+  border: 0.4rem solid black;
+  border-radius: 0.5rem;
+  margin: 1rem;
+  font-size: 1.5rem;
+  padding: 1rem 0.5rem;
+  width: 10rem;
+  text-align: center;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.4);
+  text-shadow: 0 0 0.5rem black;
+}
+
+kbd {
+  display: block;
+  font-size: 4rem;
+}
+
+.sound {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  color: #ffc600;
 }
