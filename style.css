@@ -34,6 +34,8 @@ body {
   flex: 1;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
+  align-content: center;
 }
 
 .key {
