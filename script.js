@@ -19,8 +19,8 @@ function playSound(event) {
   });
 }
 
-function removeTransition(e) {
-  e.target.classList.remove("playing");
+function removeTransition(event) {
+  event.target.classList.remove("playing");
 }
 
 keys.forEach((key) => key.addEventListener("transitionend", removeTransition));
