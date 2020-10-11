@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap");
 
 html {
   font-size: 10px;
@@ -31,6 +31,7 @@ body {
   border-radius: 0.5rem;
   margin: 1rem;
   font-size: 1.5rem;
+  font-weight: 400;
   padding: 1rem 0.5rem;
   width: 10rem;
   text-align: center;
@@ -60,4 +61,30 @@ kbd {
   transform: scale(1.1);
   border-color: #ffc600;
   box-shadow: 0 0 1rem #ffc600;
+}
+
+.credits {
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 20px;
+  width: auto;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  color: black;
+  font-weight: 600;
+}
+
+.signature {
+  font-size: 1.5rem;
+  margin-top: 0;
+}
+
+.credits__img {
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.credits__img a {
+  text-decoration: none;
+  color: black;
 }
